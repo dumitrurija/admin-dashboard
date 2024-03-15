@@ -1,0 +1,194 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    height: 80vh;
+    display: flex;
+}
+
+.main {
+    height: 100%;
+    background-image: url("cosmos-bg.jpeg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    height: 125vh;
+    margin-left: 225px;
+}
+
+header {
+    color: white;
+    padding: 50px;
+}
+
+header nav ul {
+    display: flex; 
+    justify-content: space-between;
+    list-style-type: none;
+}
+
+.hero-container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.hero h1 {
+    color: white;
+    font-size: 72px;
+    text-align: center;
+}
+
+.hero h1 span {
+    color: rgb(31, 189, 31);
+}
+
+.hero p {
+    font-size: 32px;
+    color: white;
+    text-align: center;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.buttons button {
+    width: 200px;
+    height: 50px;
+    font-size: 22px;
+    border: none;
+    cursor: pointer;
+}
+
+.buttons button:nth-child(1) {
+    background-color: rgb(31, 189, 31);
+    color: white;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    gap: 25px;
+    padding: 50px;
+}
+
+.cards div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+}
+
+.cards div i {
+    width: 75px;
+    height: 75px;
+    color: white;
+    background-color: rgb(31, 189, 31);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 26px;
+}
+
+/* Admin Dashboard */
+.admin-dashboard {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    background-color: white;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.admin {
+    display: flex;
+    flex-direction: column;
+}
+
+.admin-submit {
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.admin-dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+}
+
+.activate-dashboard {
+    font-size: 32px;
+    background-color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    padding: 10px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    z-index: 999;
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.activate-dashboard,
+.fa-xmark {
+    cursor: pointer;
+}
+
+.fa-bars {
+    display: none !important;
+}
+
+@media screen and (max-width: 1420px) {
+    header nav {
+        display: none;
+    }
+    header nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .hero-container {
+        padding: 5px;
+    }
+
+    .fa-bars,
+    .fa-square-xmark {
+        display: block !important;
+        font-size: 48px;
+        text-align: center;
+    }
+}
